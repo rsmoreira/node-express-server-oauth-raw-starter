@@ -52,5 +52,24 @@ HEROKU
 
         It will send your project to heroku, and heroku will install your project and its dependencies as expected.
 
+        PAY ATENTION: 
+
+            >>> Your package.json and your starter js file (index.js) must be at the root of your folder!
+    
+    6. Checking your application through the World-Wide-Web!
+
+        To do that, just run:
+
+            $ heroku open
+
+        It will open your default browser using the path created by heroku to access your app through the WWW.
+
+    7. Checking logs
+
+        To check the logs, just run:
+
+            $ heroku logs
+    
+
 
 
