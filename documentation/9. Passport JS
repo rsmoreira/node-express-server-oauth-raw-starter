@@ -1,0 +1,31 @@
+Passport JS
+
+There are only two components you will need to remember about Passport JS components/libraries:
+
+	> Passport
+		It is the library responsible to handle the authentication
+
+	> Passport Strategies
+		Passport allows you to login at any specific Site that implements the OAuth authenticantion flow, such as Google, Twitter, Facebook, Github, etc. 
+
+	1. Intalling Passport JS and Google Strategy 
+
+		> Go to your terminal and type:
+
+			$ npm install --save passport passport-google-oauth20
+
+	2. Configuring Passport
+
+		At your index.js file do the following:
+
+		> Import library and Strategy
+
+			_. const passport = require('passport');
+			_. const GoogleStrategy = require('passport-google-oauth20').Strategy;
+
+		> Configure the Passport with the Google Strategy
+
+			_. passport.use(new GoogleStrategy());
+
+
+For more information about Passport JS, please visit the page http://www.passportjs.org/
