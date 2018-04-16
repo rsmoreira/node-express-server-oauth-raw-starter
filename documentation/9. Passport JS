@@ -2,6 +2,11 @@ Passport JS
 
 There are only two components you will need to remember about Passport JS components/libraries:
 
+
+Obs.: 	1. If you do not have any folder/file mentioned into this documentation means that you need to create it.
+		2. The files created by this documentaion, needs to be created into the index.js file.
+
+
 	> Passport
 		It is the library responsible to handle the authentication
 
@@ -16,7 +21,7 @@ There are only two components you will need to remember about Passport JS compon
 
 	2. Configuring Passport
 
-		At your index.js file do the following:
+		At your /services/passport.js file do the following:
 
 		> Import library and Strategy
 
@@ -77,7 +82,7 @@ There are only two components you will need to remember about Passport JS compon
 
 		> Configuring our code to use Google OAuth
 
-			1. Open our index.js file again and:
+			1. Open our /services/passport.js file again and:
 
 				> Import the configured keys file /config/keys.js
 
@@ -100,7 +105,7 @@ There are only two components you will need to remember about Passport JS compon
 
 				> Configure the ROUTE to make the passport authentication
 
-					Into index.js, after the code above, do the following:
+					Into /routes/authRoutes.js, after the code above, do the following:
 
 						app.get(
 						    '/auth/google', 
@@ -125,7 +130,7 @@ There are only two components you will need to remember about Passport JS compon
 
 		> Adding route to handle the google auth callback into our code
 
-			Go to the index.js and add the code below:
+			Go to the /routes/authRoutes.js and add the code below:
 
 				app.get(
 				    '/auth/google/callback',
