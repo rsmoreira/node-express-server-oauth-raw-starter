@@ -6,6 +6,6 @@ Architecture
 
 	> Back End: Express / Node API
 
-	> Database : Mongo DB
+	> Database : Mongo DB (Mongoose.js)
 
 Communication between Front End and Back End through HTTP Request (Ajax Requests) [JSON].
