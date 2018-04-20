@@ -1,8 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-require('./services/passport');
+/**
+ * Always load firtly the models that will be used
+ * in other JS files
+ */
 require('./models/User');
+require('./services/passport');
+
 
 mongoose.connect(keys.mongoURI);
 
