@@ -16,4 +16,9 @@ module.exports = (app) => {
         passport.authenticate('google')
     );
 
+    // Route to show current_use data
+    app.get('/api/current_user', (req, res) => {
+        res.send(req.user);
+    });
+
 };
