@@ -1,5 +1,5 @@
-if (process.ENV.NODE_ENV === 'production') {
-    modele.exports = require('./prd.js');
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./prd.js');
 } else {
-    modele.exports = require('./dev.js');
+    module.exports = require('./dev.js');
 }
