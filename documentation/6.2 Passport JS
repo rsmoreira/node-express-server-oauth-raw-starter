@@ -67,7 +67,7 @@ Obs.: 	1. If you do not have any folder/file mentioned into this documentation m
 
 					> On Restrictions/Authorized redirect URIs, add:
 
-						http://localhost:5000/*
+						http://localhost:5000/auth/google/callback
 
 					> Click on Create
 
