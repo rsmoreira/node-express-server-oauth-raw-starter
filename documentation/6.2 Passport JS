@@ -72,11 +72,11 @@ Obs.: 	1. If you do not have any folder/file mentioned into this documentation m
 					> Click on Create
 
 				> A popup will be shown with the ClientID and the ClientSecret, copy and save them into a secure local.						
-					We have saved the these Ids into /config/keys.js. 
+					We have saved the these Ids into /config/dev.js (it wasn't commited, you must create it). 
 
 					TAKE CARE TO NEVER COMMIT YOUR CLIENT SECRET ID!!! 
 
-					So add keys.js to your .ignore file.
+					So add dev.js to your .ignore file.
 
 					You always will be able to get your Client ID and your Client Secret again on http://console.developers.google.com/.
 

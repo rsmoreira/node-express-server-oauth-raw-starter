@@ -17,10 +17,12 @@ Remember that, Mongoose has the Model Class components to interact with the Mong
 
 	> Configuring Mongoose 
 
-		Configure the URI at your /config/keys.js
+		Configure the URI at your /config/dev.js (for Dev environment) 
+		Or at your Deployment Application under the key MONGO_URI (for Prod Environment).
 		You can get this URI at your mLab space
 
 			...
+			// Below is just an example, you will have another URI
 			mongoURI : 'mongodb://<dbuser>:<dbpassword>@ds141474.mlab.com:41474/node-google-oauth-db'
 
 			Don't forget to update the dbuser and the dbpassword with the database admin created on mLab for this database.
